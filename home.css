@@ -1,0 +1,251 @@
+* {
+    background-color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navFlex {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    a, h2 {
+        text-decoration: none;
+        background-color: transparent;
+    }
+    menuIcon {
+        background-color: transparent;
+    }
+}
+
+.introPicture {
+    height: 400px;
+    width: 100%;
+    background-image: url("./Image/ForLaptop.jpeg");
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.introMsg {
+    position:absolute;
+    left: 40px;
+    color: snow;
+    background-color: transparent;
+    p {
+        background-color: transparent;
+        font-size: larger;
+        text-align: left;
+    }
+    h1 {
+        background-color: transparent;
+        font-size: 50px;
+        text-align: left;
+    }
+}
+#line {
+    display: block;
+    height: 1px;
+    background-color: white;
+}
+
+
+.bottomHalf {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    background-color: lightpink;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    h3, p {
+        font-size: 17px;
+        background-color: transparent;
+    }
+    .webVision, .policy {
+        background-color: transparent;
+        
+    }
+}
+
+
+
+
+
+
+.footerFlex {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    background-color: black;
+}
+.copyrights {
+    margin-left: 1rem;
+    background-color: transparent;
+    p {
+        background-color: transparent;
+        color: ivory;
+    }
+}
+.socialIcons {
+    background-color: transparent;
+    margin-right: 1rem;
+}
+
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+    background-blend-mode: normal;
+}
+.fa-github {
+    background-color: black;
+    color: white;
+    background-blend-mode: normal;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+    background-blend-mode: normal;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    background-blend-mode: normal;
+}
+.fa-soundcloud {
+    background-color: black;
+    color: white;
+    background-blend-mode: normal;
+}
+
+/* For Mobile */
+@media (max-width: 600px){
+    .navFlex {
+        flex-direction: column;
+        #order1 {
+            order: 1;
+        }
+        #order2 {
+            order: 2;
+        }
+        #order3 {
+            order: 3;
+        }
+        #order4 {
+            order: 4;
+        }
+        #order5 {
+            order: 5;
+        }
+    }
+    .navFlex > a {
+        font-size: 12px;
+    }
+    
+    .introPicture {
+        background-image: url("./Image/DigitalisationForMobile.jpeg");
+        height: 280px;
+    }
+    
+    .introMsg {
+        left: 5%;
+        p {
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+    .bottomHalf {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        .policy, .webVision {
+            margin-left: 1rem;
+            h3, p {
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .footerFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .footerLine {
+            display: block;
+            height: 1px;
+            width: 200px;
+            background-color: white;
+    }
+    .copyrights > p {
+        font-size: 13px;
+    }
+    .socialIcons {
+        margin-bottom: 15px;
+    }
+}
+/* For Tablet */
+@media (min-width:600px) and (max-width: 900px){
+    .navFlex {
+        flex-direction: column;
+        #order1 {
+            order: 1;
+        }
+        #order2 {
+            order: 2;
+        }
+        #order3 {
+            order: 3;
+        }
+        #order4 {
+            order: 4;
+        }
+        #order5 {
+            order: 5;
+        }
+    }
+    .navFlex > a {
+        font-size: 13px;
+    }
+
+    .introPicture {
+        background-image: url("./Image/ForTablet.jpeg");
+    }
+
+    .bottomHalf {
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: center;
+        .policy, .webVision {
+            margin-left: 1rem;
+            h3, p {
+                text-align: center;
+            }
+        }
+    }
+
+    .footerFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    } 
+    .footerLine {
+            display: block;
+            height: 1px;
+            width: 260px;
+            background-color: white;
+    }
+    .socialIcons {
+        margin-bottom: 15px;
+    }
+}
+/* For Desktop an above */
+@media (min-width: 1920px) {
+    .introPicture {
+        background-image: url("./Image/DesktopAnAbove.jpeg");
+    }
+}
